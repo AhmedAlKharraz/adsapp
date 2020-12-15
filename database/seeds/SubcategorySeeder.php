@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Models\Subcategory;
 
 class SubcategorySeeder extends Seeder
 {
@@ -11,6 +12,9 @@ class SubcategorySeeder extends Seeder
      */
     public function run()
     {
-        //
+        Subcategory::create([
+            'subcategory_ar' => 'كمبيوتر',
+            'subcategory_en' => 'Computer',
+        ]);
     }
 }

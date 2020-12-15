@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Models\City;
 
 class CitySeeder extends Seeder
 {
@@ -11,6 +12,9 @@ class CitySeeder extends Seeder
      */
     public function run()
     {
-        //
+        City::create([
+            'city_ar' => 'المطار',
+            'city_en' => 'Airport',
+        ]);
     }
 }

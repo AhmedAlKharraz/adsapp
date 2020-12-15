@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Models\Age;
 
 class AgeSeeder extends Seeder
 {
@@ -11,6 +12,9 @@ class AgeSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Age::create([
+            'age_ar' => 'جديد',
+            'age_en' => 'Brand New',
+        ]);
     }
 }

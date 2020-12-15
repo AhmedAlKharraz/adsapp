@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use App\Models\Condition;
 
-class ConditionSeeder extends Seeder
+class MemorySeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,8 +13,8 @@ class ConditionSeeder extends Seeder
     public function run()
     {
         Condition::create([
-            'condition_ar' => 'ممتاز من الداخل والخارج',
-            'condition_en' => 'Perfect inside and outside',
+            'condition_ar' => '512 ميغا او اكثر',
+            'condition_en' => '512 MB or More',
         ]);
     }
 }

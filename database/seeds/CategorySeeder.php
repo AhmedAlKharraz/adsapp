@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Models\Category;
 
 class CategorySeeder extends Seeder
 {
@@ -11,6 +12,9 @@ class CategorySeeder extends Seeder
      */
     public function run()
     {
-        //
+        Category::create([
+            'category_ar' => 'مايكروسوفت',
+            'category_en' => 'Microsoft',
+        ]);
     }
 }

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Models\Warranty;
 
 class WarrantySeeder extends Seeder
 {
@@ -11,6 +12,9 @@ class WarrantySeeder extends Seeder
      */
     public function run()
     {
-        //
+        Warranty::create([
+            'warranty_ar' => 'لايوجد',
+            'warranty_en' => 'doesnt apply',
+        ]);
     }
 }
