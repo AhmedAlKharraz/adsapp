@@ -11,18 +11,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call([
-            AgeSeeder::class,
-            AreaSeeder::class,
-            BrandSeeder::class,
-            CategorySeeder::class,
-            CitySeeder::class,
-            ConditionSeeder::class,
-            HarddriveSeeder::class,
-            MemorySeeder::class,
-            ProcessorSeeder::class,
-            SubcategorySeeder::class,
-            WarrantySeeder::class,
-        ]);
+        $this->call([UsersTableSeeder::class]);
     }
 }
