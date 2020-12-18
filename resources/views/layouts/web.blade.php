@@ -14,15 +14,20 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('web/style.css')}}">
 
+    <!-- jQuery Cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
-    <body class="{{ $class ?? '' }}">
+    <body class="{{ $class ?? '' }}" dir="rtl">
 
       <div id="app">
           @include('layouts.page_templates.web')
       </div>
 
+    <!-- Custom Scripts  -->
+    <script src="{{asset('web/script.js')}}"></script>
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>

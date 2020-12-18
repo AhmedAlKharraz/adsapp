@@ -1,0 +1,135 @@
+a,
+a:hover {
+    text-decoration: none;
+    color: unset!important;
+}
+
+.content {
+    margin-top: 70px;
+}
+
+
+/* Navbar */
+
+.nav-slider.toggling {
+    transition: transform 0.35s, opacity 0.35s;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+
+/* Ads Card  */
+
+.price-tag {
+    color: #ff3737;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.ad-title-tag {
+    color: #000000e3;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 5px 0!important;
+}
+
+.address-tag {
+    color: #808082;
+    font-size: 1rem;
+}
+
+
+/* Footer  */
+
+.footer-section {
+    background: #eaeaea;
+}
+
+.footer-link {
+    color: #676767!important;
+}
+
+@media (max-width: 600px) {
+    /* Custom  */
+    .mb-xs-20 {
+        margin-bottom: 20px;
+    }
+    .mb-xs-30 {
+        margin-bottom: 30px;
+    }
+    .mb-xs-50 {
+        margin-bottom: 50px;
+    }
+    .ml-xs-18 {
+        margin-left: 18px!important;
+    }
+    .text-xs-center {
+        text-align: center;
+    }
+    .justify-content-xs-center {
+        justify-content: center!important;
+    }
+    /* Navbar */
+    .nav-slider {
+        opacity: 0;
+        position: fixed;
+        z-index: 200;
+        background-color: #fefff8;
+    }
+    .navbar {
+        padding: 15px 0!important;
+    }
+    .nav-slider .navbar-nav .nav-item {
+        float: none;
+    }
+    .nav-slider .navbar-nav .nav-item .nav-link {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        color: #000;
+    }
+    .nav-slider .navbar-nav .nav-item+.nav-item {
+        margin-left: 0;
+    }
+    .navbar-nav {
+        flex-direction: column;
+    }
+    body.has-active-menu {
+        overflow: hidden;
+    }
+    .nav-mask {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+        background: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transition: opacity 0.25s, width 0s 0.25s, height 0s 0.25s;
+    }
+    .has-active-menu .nav-mask {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        transition: opacity 0.25s;
+    }
+    /* next */
+    .nav-slider {
+        width: 70%;
+        height: 100%;
+        overflow-y: scroll;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+    }
+    .has-active-menu .nav-slider {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .navbar-dark .navbar-toggler {
+        color: #000;
+    }
+}
